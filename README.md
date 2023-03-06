@@ -10,8 +10,28 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 ### 📚 User Stories
 
 - As a user, I can see a page with a three by three grid board game with a question mark in each square.
+Branch: grid
+- iterate on board state vairable to display square components for each element 
+- Use styling to set up grid
+- setup a div for all boxes to be able to use flexbox
+- Passes the current value of the irerated board into Square props
+- show prps inside of div in Square
+- Center and resize question mark
+
+- Branch - Index
 - As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
+-  Setup an onClick on the Square component div
+- The onClick will trigger a handle clikc function that will have an alert with the index of the Square that is being clicked. 
+- will need to pass index as props to Square
+- to gain access to the index being clicked, we need to pass index into a function on App.js from square.
+
+
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
+
+- create a copy our state array
+- Index allows us to use bracket notation to update the element that was clicked to a tree Emoji
+- Update state using setBoard method with the modified copied array.
+
 - As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
 - As a user, I can click on a “Play Again” button that will restart the game.
 - As a user, I can see a counter that shows how many guesses I have left. The counter starts at five and decrements one every time I click on a square that is not the treasure nor the bomb.
