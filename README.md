@@ -18,7 +18,14 @@ Branch: grid
 - show prps inside of div in Square
 - Center and resize question mark
 
+- Branch - Index
 - As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
+-  Setup an onClick on the Square component div
+- The onClick will trigger a handle clikc function that will have an alert with the index of the Square that is being clicked. 
+- will need to pass index as props to Square
+- to gain access to the index being clicked, we need to pass index into a function on App.js from square.
+
+
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
 - As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
 - As a user, I can click on a “Play Again” button that will restart the game.
